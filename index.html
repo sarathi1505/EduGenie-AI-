@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduGenie</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎓 EduGenie</h1>
+
+        <h2>Google Gemini Powered Learning Assistant</h2>
+
+        <p>Learn • Understand • Explore</p>
+
+        <form action="/ask" method="post">
+
+            <label for="task">Choose a Task:</label>
+
+            <select id="task" name="task" required>
+                <option value="qa">🤖 Q&A</option>
+                <option value="explain">💡 Explain</option>
+                <option value="quiz">📝 Quiz</option>
+                <option value="summary">📄 Summary</option>
+                <option value="learning_path">🛣️ Learning Path</option>
+            </select>
+
+            <br><br>
+
+            <textarea
+                name="question"
+                placeholder="Enter your topic, question or text here..."
+                required
+            ></textarea>
+
+            <br>
+
+            <button type="submit">
+                Ask EduGenie 🚀
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
